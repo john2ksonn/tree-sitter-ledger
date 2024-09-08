@@ -1661,7 +1661,7 @@
     },
     "time": {
       "type": "PATTERN",
-      "value": "\\d{2}:\\d{2}:\\d{2}"
+      "value": "\\d{2}:\\d{2}(:\\d{2})?([-+]\\d{4})?"
     },
     "status": {
       "type": "CHOICE",
@@ -2240,4 +2240,3 @@
   ],
   "supertypes": []
 }
-

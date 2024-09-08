@@ -248,7 +248,7 @@ module.exports = grammar({
             seq($._2d, $._dsep, $._2d),
         ),
 
-        time: $ => /\d{2}:\d{2}:\d{2}/,
+        time: $ => /\d{2}:\d{2}(:\d{2})?([-+]\d{4})?/,
 
         status: $ => choice('*', '!'),
 

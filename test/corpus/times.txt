@@ -1,0 +1,39 @@
+================================================================================
+times
+================================================================================
+
+I 09-20 12:00 Account
+O 09-20 12:30:13
+
+I 09-20 12:00-0130 Account
+O 09-20 12:30:13+0130
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (journal_item
+    (directive
+      (char_directive
+        (check_in
+          (date)
+          (time)
+          (account)))))
+  (journal_item
+    (directive
+      (char_directive
+        (check_out
+          (date)
+          (time)))))
+  (journal_item
+    (directive
+      (char_directive
+        (check_in
+          (date)
+          (time)
+          (account)))))
+  (journal_item
+    (directive
+      (char_directive
+        (check_out
+          (date)
+          (time))))))
